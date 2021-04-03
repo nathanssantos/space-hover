@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+}
+
+.particle-hover-effect-wrapper {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  min-height: 100vh;
+  background-color: #101010;
+  position: relative;
+  overflow: hidden;
+  transition: all 100ms ease-in-out;
+}
+
+.particle {
+  background-color: #fff;
+  display: flex;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  width: calc(100% - 30px);
+  max-width: 650px;
+  padding: 30px;
+}
+
+h4 {
+  font-size: 60px;
+  font-weight: 100;
+  color: #fff;
+  font-family: Montserrat, Arial;
+}
+
+.button {
+  padding: 8px 16px;
+  font-size: 16px;
+  margin-top: 20px;
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  transition: all 1500ms ease-in-out;
+  cursor: pointer;
+  font-family: Montserrat, Arial;
+  font-weight: 700;
+  background-color: #101010;
+}
+
+.button .button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #101010;
+}
