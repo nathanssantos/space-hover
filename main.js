@@ -12,7 +12,6 @@ class Particle {
       transitionDelay: `${Math.floor(Math.random() * 1000)}ms`,
     };
     this.blinkInterval = null;
-    this.rotateInterval = null;
   }
 
   applyStyles() {
